@@ -1,5 +1,6 @@
 {
   "main": {
+<<<<<<< HEAD
     "id": "88be9a6435840a66",
     "type": "split",
     "children": [
@@ -9,16 +10,35 @@
         "children": [
           {
             "id": "e22afa829ee8c3e6",
+=======
+    "id": "5ad4a1d022676059",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c26f198d39aff08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f19185dbee3b12e",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Repositorio Obsidian.md",
+=======
+                "file": "Capa de Enlace.md",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Repositorio Obsidian"
+=======
+              "title": "Capa de Enlace"
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             }
           }
         ]
@@ -27,6 +47,7 @@
     "direction": "vertical"
   },
   "left": {
+<<<<<<< HEAD
     "id": "0fdd31bc7fae64d7",
     "type": "split",
     "children": [
@@ -36,6 +57,17 @@
         "children": [
           {
             "id": "45fdf3281cbf473b",
+=======
+    "id": "aff4c130bb677fca",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d69f88501e96ea9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc55c8e5c68f5dc9",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,11 +76,19 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
+<<<<<<< HEAD
               "title": "Files"
             }
           },
           {
             "id": "0e1e87412f9d61bc",
+=======
+              "title": "File explorer"
+            }
+          },
+          {
+            "id": "1415277ea27e8b43",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +105,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "2e60031a3e0d4661",
+=======
+            "id": "4a1c7dff850521e7",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,6 +125,7 @@
     "width": 300
   },
   "right": {
+<<<<<<< HEAD
     "id": "a70313df42f824a1",
     "type": "split",
     "children": [
@@ -90,11 +135,25 @@
         "children": [
           {
             "id": "4628510c04995cb6",
+=======
+    "id": "5618770b448dcbc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd52210fe89d9175",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f5bff842a056a786",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "Repositorio Obsidian.md",
+=======
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +163,44 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
+<<<<<<< HEAD
               "title": "Backlinks for Repositorio Obsidian"
             }
           },
           {
             "id": "fd3a47d00af3f122",
+=======
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "660748e590eae3cd",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "Repositorio Obsidian.md",
+=======
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
+<<<<<<< HEAD
               "title": "Outgoing links from Repositorio Obsidian"
             }
           },
           {
             "id": "7ddea44e531e7b17",
+=======
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a8e4658fe7ad87a9",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,17 +215,25 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "fa19830a9c493ce2",
+=======
+            "id": "93d90617d4f9cba8",
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "Repositorio Obsidian.md",
+=======
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
+<<<<<<< HEAD
               "title": "Outline of Repositorio Obsidian"
             }
           },
@@ -167,12 +253,24 @@
     ],
     "direction": "horizontal",
     "width": 300
+=======
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
+<<<<<<< HEAD
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
@@ -184,5 +282,17 @@
     "Untitled.canvas",
     "Repositorio Obsidian.md",
     "README.md"
+=======
+      "daily-notes:Open today's note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8f19185dbee3b12e",
+  "lastOpenFiles": [
+    "Capa de Enlace.md",
+    "Untitled.canvas",
+    "Untitled.md"
+>>>>>>> f7580dd1bdaa54bd94b0f7be7e59be0945bbc7db
   ]
 }
