@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "5ad4a1d022676059",
+    "id": "5d4232084be0e492",
     "type": "split",
     "children": [
       {
-        "id": "7c26f198d39aff08",
+        "id": "88f7d92ad9390cd0",
         "type": "tabs",
         "children": [
           {
-            "id": "8f19185dbee3b12e",
+            "id": "b8debd8778d237ce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Capa de Enlace.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Capa de Enlace"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "aff4c130bb677fca",
+    "id": "b053974e25bcfc0d",
     "type": "split",
     "children": [
       {
-        "id": "8d69f88501e96ea9",
+        "id": "6e7f83211f01a0f1",
         "type": "tabs",
         "children": [
           {
-            "id": "cc55c8e5c68f5dc9",
+            "id": "be334eb29aa876c8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,11 +40,11 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "File explorer"
+              "title": "Files"
             }
           },
           {
-            "id": "1415277ea27e8b43",
+            "id": "eb01e856e51d9dd7",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "4a1c7dff850521e7",
+            "id": "f1b619b296e4264f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,15 +77,15 @@
     "width": 300
   },
   "right": {
-    "id": "5618770b448dcbc2",
+    "id": "3e261bc387be9cde",
     "type": "split",
     "children": [
       {
-        "id": "cd52210fe89d9175",
+        "id": "eff2ae36c83a5779",
         "type": "tabs",
         "children": [
           {
-            "id": "f5bff842a056a786",
+            "id": "4020fd9724665f9b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -107,7 +103,7 @@
             }
           },
           {
-            "id": "660748e590eae3cd",
+            "id": "b18a4d1b92c982e3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -120,7 +116,7 @@
             }
           },
           {
-            "id": "a8e4658fe7ad87a9",
+            "id": "0dee1c966b00a958",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,7 +131,7 @@
             }
           },
           {
-            "id": "93d90617d4f9cba8",
+            "id": "068a2d3b149a0aa9",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -147,28 +143,55 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "3d2d385741f3003d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's note": false,
+      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f19185dbee3b12e",
+  "active": "be334eb29aa876c8",
   "lastOpenFiles": [
-    "Capa de Enlace.md",
+    "Comunicaciones con Fibra Optica.md",
     "Untitled.canvas",
-    "Untitled.md"
+    "Capa de Enlace.md",
+    "README.md",
+    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos/Sistemas de Comunicaciones electrónicas.pdf.md",
+    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos",
+    "home/nacho_mazzoni/Escritorio/UTN/3",
+    "home/nacho_mazzoni/Escritorio/UTN",
+    "home/nacho_mazzoni/Escritorio",
+    "home/nacho_mazzoni",
+    "home",
+    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md",
+    "ink /home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md",
+    "ink /home/nacho_mazzoni/Escritorio/UTN/3",
+    "ink /home/nacho_mazzoni/Escritorio/UTN",
+    "ink /home/nacho_mazzoni/Escritorio",
+    "ink /home/nacho_mazzoni",
+    "2025-05-22.md",
+    "Repositorio Obsidian.md"
   ]
 }
