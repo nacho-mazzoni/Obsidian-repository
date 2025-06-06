@@ -1,0 +1,103 @@
+# Subcapa de control de acceso al medio
+## Redes 
+- Redes Punto a Punto
+- Redes que utilizan canales de difusión
+## subcapas de La capa de enlace
+- *La subcapa LLC (Logical Link Control) control de enlace lógico*
+- *La subcapa MAC (Media Acces Control) control de acceso al medio*
+
+### La subcapa LLC 
+###### proporciona a las capas superiores una interfaz independiente de la tecnología empleada en la capa de enlace de datos y física.
+### La subcapa MAC
+###### Los protocolos utilizados para determinar quien sigue en un canal multiacceso pertenecen a una subcapa de la capa de enlace llamada MAC 
+###### Se encarga de la topologia logica de la red y el método de acceso a esta
+###### Cada tecnología de red tiene una subcapa MAC diferente
+###### En la subcapa MAC residen las direcciones MAC
+## El problema de asignaciones de canales
+###### *Asignacion estática de canales en LAN y MAC*
+- Tiene sentido, cuando existe un numero pequeño y constante N, de usuarios y cada uno tiene suficientes datos para mantener ocupado el canal 
+- Existe desperdicio potencial del ancho de banda cuando algunos usuarios no transmiten o lo hacen por ráfagas.
+###### *Asignación dinámica de canales en LAN y MAN*
+- Puede hacer mejor uso del ancho de banda
+### Asignación Estática de canales
+###### Eficiencia, como el tiempo promedio de retardo T con λ tramas/segundos y 1/µ bits/trama
+- un solo canal con velocidad de datos C bps
+		$$T = 1 / µC - λ $$
+- El canal con velocidad de datos C bps se divide en N subcanales
+		$$T_FDM = 1/(µ(C/N)- λ/N = N / µ C-λ = NT$$
+### Asignación dinámica de canales 
+#### *5 supuestos*
+1. Modelo de Estación: N estaciones independientes, después de generar una trama cada estación se bloquea hasta que su trama es transmitida. *Probabilidad de Tx de trama λΔt* λ = tasa de llegada de tramas nuevas
+2. La suposición de canal único: solamente hay un canal para todas las estaciones y todas son equivalentes
+3. La suposición de colisión: Si dos estaciones transmiten simultáneamente hay colisión y las estaciones reconocen las colisiones. La trama colisionada debe retransmitirse después. Son los únicos errores.
+4. a. Tiempo continuo: La transmisión puede iniciar en cualquier instante del tiempo, no hay reloj maestro.
+	b. Tiempo Ranurado: El tiempo se divide en ranuras de tiempo o slots, la transmisión se inicia al inicio del slot.
+5. a. Detección de portadora: Las estaciones no transmiten si el canal está ocupado y pueden detectar esta situación.
+	b. Sin Detección de portadora: Las estaciones no pueden detectar antes de intentar usarlo. Simplemente transmiten. Solo después pueden determinar si la transmisión tuvo éxito.
+## Protocolos de Acceso Múltiple
+### Definiciones:
+- *Colisión:* cuando dos o más tramas son enviadas simultáneamente por el canal único
+- *Contienda = Contención = Competencia:* Cuando múltiples sistemas deben tratar de ganar el canal común para su uso irrestricto
+- *Persistencia:* La característica de un protocolo de iniciar la transmisión al encontrar el canal libre después de esperar por el
+### ALOHA
+#### ALOHA Puro
+###### En ALOHA Puro, las tramas son transmitidas en tiempos completamente arbitrarios, no se verifica si el canal esta ocupado antes de transmitir. 
+###### No se requiere sincronización global del tiempo.
+##### Eficiencia
+###### Consideraciones
+- Las tramas son de longitud fija
+- La estación tiene dos estados: Escribiendo y Esperando. se bloquea esperando la transmisión exitosa de una trama.
+- Número infinito de usuarios generando nuevas tramas, según una distribución de Poisson con una media de N tramas por tiempo de trama. 0 < N< 1 tramas por tiempo de trama. N>1 colisión.
+	También existe la retransmisión de tramas que sufrieron colisiones por lo que G>N (Si N != 0 --> G!=N, poca colisión).
+	G es intentos por tiempo de trama.
+- El rendimiento por tiempo de trama S = Gp0, P0, la probabilidad de que la transmisión de la trama tenga éxito.
+- Periodo vulnerable para la trama sombreada = 2t
+- Tramas generadas en 2 períodos = 2G
+
+##### Eficiencia de ALOHA Ranurado
+- En ALOHA Ranurado (slotted), el tiempo es discreto, cada ventan de tiempo corresponde al tiempo de una trama.
+- Las estaciones unicamente inician la transmision al principio de la ventana de tiempo.
+- El tiempo vurnerable se reduce a la mitad
+- La eficiencia es $$S = G e⁻G$$
+- El rendimiento ofrecido versus el trafico ofrecido en los sistemas ALOHA
+
+### Protocolos de Acceso Múltiple con Detección de la Portadora
+###### Los protocolos en los que las estaciones ESCUCHAN LA PORTADORA (Una transmisión) y actúan de acuerdo con ello se llaman <u>Protocolos de Deteccion de Portadora.</u>
+
+#### CSMA 1-Persistente:
+###### El protocolo inicia la transmisión con una probabilidad 1 cuando encuentra el canal libre después de esperar
+#### CSMA no Persistente:
+###### Antes de enviar, una estación escucha el canal. Si nadie está transmitiendo, la estación comienza a hacerlo. Si el canal ya esta en uso, la estación no lo escucha de manera continua a fin de tomarlo de inmediato al detectar el final de la transmisión previa. En cambio, espera un periodo aleatorio y repite el algoritmo.
+
+#### CSMA p-persistente:
+###### En <u>Canales de tiempo discreto</u>, el protocolo inicia con na probabilidad "p" cuando encuentra el canal libre/inactivo después de esperar o la difiere con probabilidad q = 1-p
+
+### CSMA Persistente y no Persistente:
+- ###### Comparación de la utilización del canal en función de la carga para varios protocolos de acceso aleatorio
+
+### CSMA/CD: CSMA con detección de colisiones
+- ###### Al detectar la colisión, todas las estaciones que están transmitiendo se callan, esperan un tiempo aleatorio y luego intentan de nuevo
+- ###### Usado en Ethernet
+- ###### CSMA/CD puede estar en uno de tres estados: Contienda, Transmisión o en reposo.
+- ###### El tiempo que se tarda en detectar la colision es como máximo el doble del tiempo de propagación de un extremo a otro del cable
+- ###### Se modela el intervalo de contienda como un ALOHA ranurado con un ancho de 2τ
+- ###### la colisión debe poder detectarse (no puede haber bits de 0 voltios)
+- ###### El sistema es inherentemente half-duplex
+###### CSMA/CD puede estar en tres estados: contención, transmisión u ociosa.
+## Protocolos sin Colisiones (Collision-Free Protocols)
+### Mapa de bits
+- ###### el protocolo básico es un protocolo de reservación
+
+- ###### d = bits (cant de datos), N = estaciones.
+- ###### Eficiencia de baja carga = d/(N+d)
+- ###### Eficiencia a carga alta por canal = d/(d+1)
+- ###### No escala bien para miles de estaciones
+### Conteo descendente binario
+- ###### Cada estación envía su dirección binaria con el bit de mayor peso primero
+- ###### las direcciones son combinadas en OR 
+- ###### La estación que encuentra que su 0 fue sobrescrito por un 1 se rinde
+- ###### Eficiencia = d/(d+log2(N))
+
+## Protocolos de Acceso múltiple por división de longitud de onda 
+
+## Protocolos de LAN's Inalambricas 

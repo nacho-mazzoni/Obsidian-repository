@@ -118,4 +118,20 @@ $W = 2t(tau)*v/t + 1$
 #### Componentes de PPP 
 - LCP Link Control Protocol
 - NCP Network Control Protocol
-- CHAP Challenge Handshake Authentication Protocol
+- CHAP Challenge Handshake Authentication Protocolo
+
+##### Funcionamiento de CHAP 
+
+#### Nivel de enlace en Frame Ready
+- No se realiza reenvío en caso de erro 
+- El campo de dirección contiene la informacion del circuito virtual y los parametros propios de las funciones de Frame Relay
+## Nivel de Enlace en ATM
+###### Corresponde a la subcapa TC (Transmission Convergence) de la capa fisica del modeloo ATM
+###### Estructura de una celda ATM
+
+###### Estructura de la cabecera de celda ATM
+
+### Identificación de celdas ATM
+- *Las celdas no llevan un delimitador. Para averiguar donde empiezan se usan dos tecnicas:*
+###### 1. Caracteristicas del medio fisico
+###### 2. Tanteo del HEC: se busca el flujo de bits recibido una secuencia de 40 bits en la que los ocho ultimos sean el HEC de los 32 primeros. Cuando se encuentra uno valido se confirma en las cuatro celdas siguientes.
