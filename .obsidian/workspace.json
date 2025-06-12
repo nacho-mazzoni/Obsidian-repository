@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-22.md",
+                "file": "Diseño De Sistemas/Cualidades de Software.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-05-22"
+              "title": "Cualidades de Software"
             }
           }
         ]
@@ -177,26 +177,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "be334eb29aa876c8",
+  "active": "b8debd8778d237ce",
   "lastOpenFiles": [
-    "Untitled",
-    "Capa de Enlace.md",
-    "Comunicaciones con Fibra Optica.md",
-    "Conmutación En Capa de Enlace.md",
-    "Ethernet.md",
+    "Diseño De Sistemas/Ingeniería de Software.md",
+    "Diseño De Sistemas/Cualidades de Software.md",
+    "Kaizen.md",
+    "images/modelodecascada.png",
+    "images/modeloincremental.png",
+    "images/modeloevolutivoenespiral.png",
+    "images/modeloevolutivo.png",
+    "images/modeloenV.png",
+    "images/flujodelproceso2.png",
+    "images/flujosdelproceso1.png",
+    "images/flujodelproceso3.png",
+    "Comunicaciones",
+    "Comunicaciones/2025-05-22.md",
+    "Diseño De Sistemas",
+    "Comunicaciones/Capa de Enlace.md",
+    "Comunicaciones/Comunicaciones con Fibra Optica.md",
+    "Comunicaciones/Conmutación En Capa de Enlace.md",
+    "Comunicaciones/Ethernet.md",
     "README.md",
-    "Subcapa MAC.md",
-    "Transmisión por microondas terrestre.md",
+    "Comunicaciones/Subcapa MAC.md",
+    "Comunicaciones/Transmisión por microondas terrestre.md",
     "images/CableadoEthernet.jpg",
     "images/TipoCableadoHUB.jpg",
-    "images/ProtocoloSubCapaMACEthernet.jpg",
-    "images/DibujoExplicaciónTamTrama.jpg",
-    "images/DeteccionDeColision.jpg",
-    "images/codificacionEthernet.jpg",
-    "images/FormatodeTramaHDLC.jpg",
-    "images/Zona de Fresnel.jpg",
-    "images/transmisionAsincrona.jpg",
-    "images/TramaPPP.jpg",
     "images",
     "Carpeta sin título",
     "Untitled.canvas",
@@ -209,9 +214,6 @@
     "home",
     "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md",
     "ink /home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md",
-    "ink /home/nacho_mazzoni/Escritorio/UTN/3",
-    "ink /home/nacho_mazzoni/Escritorio/UTN",
-    "2025-05-22.md",
     "Repositorio Obsidian.md"
   ]
 }
