@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Subcapa MAC.md",
+                "file": "2025-05-22.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Subcapa MAC"
+              "title": "2025-05-22"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3e261bc387be9cde",
@@ -178,23 +177,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b8debd8778d237ce",
+  "active": "be334eb29aa876c8",
   "lastOpenFiles": [
+    "Untitled",
     "Capa de Enlace.md",
-    "Subcapa MAC.md",
-    "README.md",
-    "Transmisión por microondas terrestre.md",
     "Comunicaciones con Fibra Optica.md",
+    "Conmutación En Capa de Enlace.md",
+    "Ethernet.md",
+    "README.md",
+    "Subcapa MAC.md",
+    "Transmisión por microondas terrestre.md",
+    "images/CableadoEthernet.jpg",
+    "images/TipoCableadoHUB.jpg",
+    "images/ProtocoloSubCapaMACEthernet.jpg",
+    "images/DibujoExplicaciónTamTrama.jpg",
+    "images/DeteccionDeColision.jpg",
+    "images/codificacionEthernet.jpg",
     "images/FormatodeTramaHDLC.jpg",
     "images/Zona de Fresnel.jpg",
     "images/transmisionAsincrona.jpg",
     "images/TramaPPP.jpg",
-    "images/TiposdeTramaHDLC.jpg",
-    "images/RepSelectivayRetrocesoN.jpg",
-    "images/ProtocoloVentanaDeslizante 1.jpg",
-    "images/ProtocoloParadaEspera.jpg",
-    "images/ProtocoloVentanaDeslizante.jpg",
-    "images/IdentificadorDeTramas.jpg",
     "images",
     "Carpeta sin título",
     "Untitled.canvas",

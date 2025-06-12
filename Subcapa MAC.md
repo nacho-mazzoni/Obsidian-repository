@@ -14,7 +14,7 @@
 ###### Cada tecnología de red tiene una subcapa MAC diferente
 ###### En la subcapa MAC residen las direcciones MAC
 ## El problema de asignaciones de canales
-###### *Asignacion estática de canales en LAN y MAC*
+###### *Asignación estática de canales en LAN y MAC*
 - Tiene sentido, cuando existe un numero pequeño y constante N, de usuarios y cada uno tiene suficientes datos para mantener ocupado el canal 
 - Existe desperdicio potencial del ancho de banda cuando algunos usuarios no transmiten o lo hacen por ráfagas.
 ###### *Asignación dinámica de canales en LAN y MAN*
@@ -53,6 +53,7 @@
 - El rendimiento por tiempo de trama S = Gp0, P0, la probabilidad de que la transmisión de la trama tenga éxito.
 - Periodo vulnerable para la trama sombreada = 2t
 - Tramas generadas en 2 períodos = 2G
+![[ALOHAPuro.jpg]]
 
 ##### Eficiencia de ALOHA Ranurado
 - En ALOHA Ranurado (slotted), el tiempo es discreto, cada ventan de tiempo corresponde al tiempo de una trama.
@@ -60,21 +61,21 @@
 - El tiempo vurnerable se reduce a la mitad
 - La eficiencia es $$S = G e⁻G$$
 - El rendimiento ofrecido versus el trafico ofrecido en los sistemas ALOHA
-
+![[RendimientoALOHA.jpg]]
 ### Protocolos de Acceso Múltiple con Detección de la Portadora
 ###### Los protocolos en los que las estaciones ESCUCHAN LA PORTADORA (Una transmisión) y actúan de acuerdo con ello se llaman <u>Protocolos de Deteccion de Portadora.</u>
 
 #### CSMA 1-Persistente:
 ###### El protocolo inicia la transmisión con una probabilidad 1 cuando encuentra el canal libre después de esperar
+![[CSMA1-persistente.jpg]]
 #### CSMA no Persistente:
 ###### Antes de enviar, una estación escucha el canal. Si nadie está transmitiendo, la estación comienza a hacerlo. Si el canal ya esta en uso, la estación no lo escucha de manera continua a fin de tomarlo de inmediato al detectar el final de la transmisión previa. En cambio, espera un periodo aleatorio y repite el algoritmo.
-
+![[CSMAnoPersistene.png]]
 #### CSMA p-persistente:
 ###### En <u>Canales de tiempo discreto</u>, el protocolo inicia con na probabilidad "p" cuando encuentra el canal libre/inactivo después de esperar o la difiere con probabilidad q = 1-p
-
+![[CSMAp-persistente.jpg]]
 ### CSMA Persistente y no Persistente:
 - ###### Comparación de la utilización del canal en función de la carga para varios protocolos de acceso aleatorio
-
 ### CSMA/CD: CSMA con detección de colisiones
 - ###### Al detectar la colisión, todas las estaciones que están transmitiendo se callan, esperan un tiempo aleatorio y luego intentan de nuevo
 - ###### Usado en Ethernet
@@ -84,10 +85,11 @@
 - ###### la colisión debe poder detectarse (no puede haber bits de 0 voltios)
 - ###### El sistema es inherentemente half-duplex
 ###### CSMA/CD puede estar en tres estados: contención, transmisión u ociosa.
+![[CSMACDcondeteccion.jpg]]
 ## Protocolos sin Colisiones (Collision-Free Protocols)
 ### Mapa de bits
 - ###### el protocolo básico es un protocolo de reservación
-
+![[mapadebits.jpg]]
 - ###### d = bits (cant de datos), N = estaciones.
 - ###### Eficiencia de baja carga = d/(N+d)
 - ###### Eficiencia a carga alta por canal = d/(d+1)
@@ -97,7 +99,8 @@
 - ###### las direcciones son combinadas en OR 
 - ###### La estación que encuentra que su 0 fue sobrescrito por un 1 se rinde
 - ###### Eficiencia = d/(d+log2(N))
-
+![[conteodescendentebinario.jpg]]
 ## Protocolos de Acceso múltiple por división de longitud de onda 
 
 ## Protocolos de LAN's Inalambricas 
+![[ProtocolodeLan2.jpg]]
