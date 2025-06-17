@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diseño De Sistemas/Cualidades de Software.md",
-                "mode": "source",
+                "file": "Diseño De Sistemas/4.3 Diagrama de Estado.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cualidades de Software"
+              "title": "4.3 Diagrama de Estado"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3e261bc387be9cde",
@@ -179,6 +180,15 @@
   },
   "active": "b8debd8778d237ce",
   "lastOpenFiles": [
+    "Diseño De Sistemas/4.2 Paquetes de Diseño.md",
+    "Diseño De Sistemas/4.1 Modelos.md",
+    "Diseño De Sistemas/3.3 Informes.md",
+    "Diseño De Sistemas/3.2 Sesgo.md",
+    "Diseño De Sistemas/3.1 Salidas.md",
+    "Diseño De Sistemas/2.1.md",
+    "Diseño De Sistemas/1.3 Conceptos del Diseño.md",
+    "Diseño De Sistemas/1.2 Cualidades de Software.md",
+    "Diseño De Sistemas/1.1 Ingeniería de Software.md",
     "Diseño De Sistemas/Ingeniería de Software.md",
     "Diseño De Sistemas/Cualidades de Software.md",
     "Kaizen.md",
