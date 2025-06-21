@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "88f7d92ad9390cd0",
+        "id": "c025af5c502e5c51",
         "type": "tabs",
         "children": [
           {
-            "id": "b8debd8778d237ce",
+            "id": "ef2a593661f5516f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Diseño De Sistemas/4.3 Diagrama de Estado.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.3 Diagrama de Estado"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3e261bc387be9cde",
@@ -178,8 +173,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b8debd8778d237ce",
+  "active": "ef2a593661f5516f",
   "lastOpenFiles": [
+    "Inv Operativa/Pronosticos.md",
+    "Inv Operativa/Clase 13-06.md",
+    "Inv Operativa/Modelo EOQ.md",
+    "Diseño De Sistemas/4.3 Diagrama de Estado.md",
     "Diseño De Sistemas/4.2 Paquetes de Diseño.md",
     "Diseño De Sistemas/4.1 Modelos.md",
     "Diseño De Sistemas/3.3 Informes.md",
@@ -189,6 +188,11 @@
     "Diseño De Sistemas/1.3 Conceptos del Diseño.md",
     "Diseño De Sistemas/1.2 Cualidades de Software.md",
     "Diseño De Sistemas/1.1 Ingeniería de Software.md",
+    "images/PatronesArquitectonicos.jpg",
+    "Comunicaciones/Transmisión por microondas terrestre.md",
+    "images/problemaDeOptimizacion3.jpg",
+    "images/problemaDeOptimizacion2.jpg",
+    "images/problemaDeOptimizacion.jpg",
     "Diseño De Sistemas/Ingeniería de Software.md",
     "Diseño De Sistemas/Cualidades de Software.md",
     "Kaizen.md",
@@ -198,8 +202,6 @@
     "images/modeloevolutivo.png",
     "images/modeloenV.png",
     "images/flujodelproceso2.png",
-    "images/flujosdelproceso1.png",
-    "images/flujodelproceso3.png",
     "Comunicaciones",
     "Comunicaciones/2025-05-22.md",
     "Diseño De Sistemas",
@@ -209,9 +211,6 @@
     "Comunicaciones/Ethernet.md",
     "README.md",
     "Comunicaciones/Subcapa MAC.md",
-    "Comunicaciones/Transmisión por microondas terrestre.md",
-    "images/CableadoEthernet.jpg",
-    "images/TipoCableadoHUB.jpg",
     "images",
     "Carpeta sin título",
     "Untitled.canvas",
@@ -222,8 +221,6 @@
     "home/nacho_mazzoni/Escritorio",
     "home/nacho_mazzoni",
     "home",
-    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md",
-    "ink /home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md",
-    "Repositorio Obsidian.md"
+    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md"
   ]
 }

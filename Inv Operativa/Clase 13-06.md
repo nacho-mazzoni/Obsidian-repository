@@ -8,17 +8,19 @@ beta: parametro para controlar cuanto cambia la tendencia con el cambio reciente
 y = a+b.x
 Series de tiempos no estables con tendencia lineal a largo plazo
 #### Ajuste lineal de tendencia:
-regresion lineal q relaciona la variable dependiente con el tiempo.
+regresión lineal q relaciona la variable dependiente con el tiempo.
 
-Problema de optimizacion
-**(Agregar fotos)**
-Condicion suficiente, d es una función convexa, luego es minimo global del problema
+Problema de optimización
+![[problemaDeOptimizacion.jpg]]
+![[problemaDeOptimizacion2.jpg]]
+![[problemaDeOptimizacion3.jpg]]
+Condición suficiente, d es una función convexa, luego es mínimo global del problema
 
 ## Ajuste factor estacional
-un patron estacional es un aumento o disminucion repetitivo de la demanda 
-### Metodo de ajuste Estacional:
+un patrón estacional es un aumento o disminución repetitivo de la demanda 
+### Método de ajuste Estacional:
 aplica un factor estacional a un pronostico para obtener un pronostico estacionado.
-el metodo mas sencillo es el metodo multiplicativo.
+el método mas sencillo es el método multiplicativo.
  Di : datos de la serie en diferentes años
  (buscar formula S_i)
 
@@ -27,16 +29,16 @@ $et = Yt - Ft$
 no es un buen calculo de error
 $|et| = |Yt - Ft|$
 Medidas mas usadas:
-- Desviacion absoluta media 
-- Error cuadratico Medio.
+- Desviación absoluta media 
+- Error cuadrático Medio.
 
 Proceso de Pronostico:
 1. Identificar el objetivo del pronostico
-2. Recolectar datos historicos
+2. Recolectar datos históricos
 3. Graficar datos e identificar patrones
-4. Seleccionar un metodo de pronostico
-5. Calcular el pronostico para los periodos historicos
-6. Pronosticar el proximo periodo
+4. Seleccionar un método de pronostico
+5. Calcular el pronostico para los periodos históricos
+6. Pronosticar el próximo periodo
 7. Evaluar la exactitud del pronostico con una o mas medidas de errores
 De 7 pasa al 4 si es que el metodo no ajusta bien.
 
