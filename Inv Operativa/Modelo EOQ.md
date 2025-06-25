@@ -14,7 +14,7 @@ El costo de mantener productos en inventario, costo de retención.
 Este costo varia con el nivel de inventario en stock y algunaz veces con el tiempo que lo tengamos guardado.
 #### Ordering Cost: Co
 El costo de ordenamiento del pedido. Expresado como precio por pedido y es independiente del tamaño del pedido.
-###### Ordering cost reacciona inversamente a Carrying cost, si el tamaño de pedido Q aumenta y menos pedidos se necesitan por lo que el costo de Orden disminuye. sin embargo 
+###### Ordering cost reacciona inversamente a Carrying cost, si el tamaño de pedido Q aumenta y menos pedidos se necesitan por lo que el costo de Orden disminuye. sin embargo el costo de mantener el inventario aumentara debido al aumento de cantidad pedida Q
 ### Shortage Cost: costo de escacez
 Se da cuando la demanda del consumidor no se puede cumplir por falta de stock. Si esta escaecez se mantiene permanentemente incluye las perdidas por las ventas no realizadas.
 
@@ -38,7 +38,7 @@ Se obtiene multiplicando el costo anual de mantenimiento por unidad con el nivel
 $$CostoAnualdeMantenimiento = Cc*Q/2$$
 ###### El costo anual de inventario total es la suma del costo anual de pedido y de mantenimiento
 $$TC = Co*D/Q + Cc*Q/2$$
-#### Tamaño óptimo de pedido para le modelo:
+#### Tamaño óptimo de pedido para el modelo:
 $$Q* = sqrt(2*Co*D/Cc)$$
 #### Objetivo del modelo:
 $$MIN TC(Q) = Co*D/Q + Cc*Q/2$$
@@ -52,7 +52,7 @@ En el modelo EOQ clasico el nivel de inventario medio es Q/2 pero en esta variac
 #### Nivel de inventario:
 ##### Maximo: 
 $$Q*(1-d/p)$$
-##### Minimo:
+##### Medio:
 $$(Q/2)*(1-d/p)$$
 #### Definimos los siguientes parametros:
 **p:** tasa diaria con la que se recibe el pedido. Conocida como tasa de producción.
@@ -75,8 +75,8 @@ $$Tc(Q)= Co*D/Q + ((Cc*Q)/2)*(1-d/p)$$
 #### Cantidad óptima de pedido:
 $$Q* = sqrt((2CoD)/(Cc*(1-d/p)))$$
 # Modelo EOQ con Descuento por Cantidad
-El modelo EOQ basico puede ser utilizado para resolver la vantidad optima de pedido para este tipo de modelo. Sin embargo la aplicacion esta alterada, La ecuacion agrega el precio del producto en la determinada cantidad.
+El modelo EOQ basico puede ser utilizado para resolver la cantidad optima de pedido para este tipo de modelo. Sin embargo la aplicacion esta alterada, La ecuacion agrega el precio del producto en la determinada cantidad.
 $$Tc(Q) = CoD/Q + CcQ/2 + PD$$
 Cuando hay un descuento debido a la cantidad, este esta asociado a una determinada cantidad de pedido Q, La cual puede ser diferente de la optima, y el cliente evaluara la posibilidad de sacrificar mayores costos de mantenimiento de inventario por el descuento de la cantidad. Como resultado, el precio de compra afecta la cantidad optima de pedido cuando hay descuentos disponibles.
 # Stocks de Seguridad:
-Cuando la demanda es incierta, un stock de seguridad es añadido para esa cumplir con esa demanda mientras se espera por la producción.
+Cuando la demanda es incierta, un stock de seguridad es añadido para cumplir con esa demanda mientras se espera por la producción.

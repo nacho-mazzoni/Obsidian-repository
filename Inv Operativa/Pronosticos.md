@@ -65,7 +65,7 @@ El metodo de Holt es un tipo de suavizamiento exponencial doble que permite un s
 El metodo requiere de la especificacion de dos constantes de suavizamiento, α y β, y utiliza dos ecuaciones de suavizamiento: una para el valor de la serie (intercepcion) y una para la tendencia (pendiente). Las ecuaciones son:
 $$Ft = α(At-1) + (1-α)(Ft-1 + Tt-1)$$
 $$Tt = β(Ft - F(t-1)) + (1-β)T(t-1)$$
-Ft intercepcion en el timepo t y Tt el valor de la pendiente en el tiempo t. 
+Ft intercepcion en el tiempo t y Tt el valor de la pendiente en el tiempo t. 
 ##### La segunda ecuacion puede explicarse así:
 nuestro nuevo estimado de intercepcion provoca que modifiquemos nuestro estimado de pendiente en la cantidad Ft - Ft-1. este valor se promedia entonces con el estimado anterior de la pendiente Tt-1. 
 Las constantes de suavizamiento pueden ser las mismas pero para la mayoría de aplicaciones se da mayor estabilidad al estimado de la pendiente β <= α.

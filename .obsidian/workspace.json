@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c025af5c502e5c51",
+        "id": "ab26f36268082ec2",
         "type": "tabs",
         "children": [
           {
-            "id": "ef2a593661f5516f",
+            "id": "749a3415b7d7ce94",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Comunicaciones/802.11 Wireless LAN- Virtual.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "802.11 Wireless LAN- Virtual"
             }
           }
         ]
@@ -173,11 +177,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef2a593661f5516f",
+  "active": "749a3415b7d7ce94",
   "lastOpenFiles": [
+    "Comunicaciones/Medios de transmisión no guiados.md",
+    "Comunicaciones/802.11 Wireless LAN- Virtual.md",
+    "Comunicaciones/Medio de Transmisión Tangibles.md",
+    "Comunicaciones/Ethernet.md",
+    "Comunicaciones/Conmutación En Capa de Enlace.md",
+    "Comunicaciones/Comunicaciones con Fibra Optica.md",
+    "Comunicaciones/Capa de Enlace.md",
+    "Comunicaciones/Transmisión por microondas terrestre.md",
+    "Comunicaciones/Subcapa MAC.md",
     "Inv Operativa/Pronosticos.md",
-    "Inv Operativa/Clase 13-06.md",
     "Inv Operativa/Modelo EOQ.md",
+    "Inv Operativa/Clase 13-06.md",
     "Diseño De Sistemas/4.3 Diagrama de Estado.md",
     "Diseño De Sistemas/4.2 Paquetes de Diseño.md",
     "Diseño De Sistemas/4.1 Modelos.md",
@@ -189,7 +202,6 @@
     "Diseño De Sistemas/1.2 Cualidades de Software.md",
     "Diseño De Sistemas/1.1 Ingeniería de Software.md",
     "images/PatronesArquitectonicos.jpg",
-    "Comunicaciones/Transmisión por microondas terrestre.md",
     "images/problemaDeOptimizacion3.jpg",
     "images/problemaDeOptimizacion2.jpg",
     "images/problemaDeOptimizacion.jpg",
@@ -205,22 +217,14 @@
     "Comunicaciones",
     "Comunicaciones/2025-05-22.md",
     "Diseño De Sistemas",
-    "Comunicaciones/Capa de Enlace.md",
-    "Comunicaciones/Comunicaciones con Fibra Optica.md",
-    "Comunicaciones/Conmutación En Capa de Enlace.md",
-    "Comunicaciones/Ethernet.md",
-    "README.md",
-    "Comunicaciones/Subcapa MAC.md",
     "images",
     "Carpeta sin título",
     "Untitled.canvas",
-    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos/Sistemas de Comunicaciones electrónicas.pdf.md",
     "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos",
     "home/nacho_mazzoni/Escritorio/UTN/3",
     "home/nacho_mazzoni/Escritorio/UTN",
     "home/nacho_mazzoni/Escritorio",
     "home/nacho_mazzoni",
-    "home",
-    "home/nacho_mazzoni/Escritorio/UTN/3/Comunicaciones de Datos.md"
+    "home"
   ]
 }

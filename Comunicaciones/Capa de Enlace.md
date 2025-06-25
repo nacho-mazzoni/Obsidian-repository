@@ -73,7 +73,7 @@ $W = 2t(tau)*v/t + 1$
 - t: tamaño de la trama
 ###### Cuando se envían todas las tramas por el tamaño de la ventana deslizante el emisor para porque a esta altura ya debería haber recibido el primer ack. 
 ###### Número de secuencia: número de tramas consecutivas que puede enviar.
-###### 
+
 #### El Protocolo puede ser: 
 - Retroceso n: no se acepta una trama hasta haber recibido las anteriores.
 - Repetición selectiva: Se admite cualquier trama en el rango esperado y se pide solo la que falta.

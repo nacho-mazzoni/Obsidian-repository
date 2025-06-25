@@ -1,0 +1,47 @@
+## Medios guiados:
+- cables coaxiales
+- cables de cobre
+- Fibras Ópticas
+## Características de transmisión de medios:
+
+### Diafonía
+En un par de cables esxiste diafonía, cuando podemos medir alguna señal en él, que pertenece a otro par de cables cercano. Este fenomeno tambien es llamado crosstalk.
+Es ruido para el cable de al lado, hay que tratar de eliminar la diafonia, porque no es un efecto deseado. Se elimina trenzando los cables
+Dos parametros que se miden en cables trenzados:
+- NEXT: Near end Crosstalk. Cuanto estoy midiendo yo la señal en mi cable del cable que tengo al lado cerca del transmisor.
+- FEXT: Far end crosstalk. Cuanto mido de la señal en el punto mas lejos desde donde empece a transmitir.
+**¿Porque cuando lo trenzas reduce el ruido?**
+Lo que hace el trenzado el efecto antena ya no lo voy a tener porque no voy a tener un cable al lado de otro. Y el efecto de generar una trenza entre los dos cables que yo estoy teniendo es que el campo magnético no se va a pegar en el cable que esta al lado.
+## Cable coaxial:
+Conductor cilíndrico externo que rodea a un cable conductor.
+- el conductor externo forma una malla de protección 
+- el conductor interno es un metal solido
+- Separados por material aislante
+- Cubiertos por material de relleno
+### Aplicaciones:
+- Distribución de tv (Redes CATV)
+- telefonía a larga distancia
+- Redes de área local (en desuso)
+### Características:
+- transmite señales analogicas y digitales
+- Buena respuesta en frecuencia
+- aja interferencia y baja diafonía
+### Limitaciones:
+- atenuación
+- Ruido de intermodulacion cuando usamos FDM (Técnica de modulación para transmisión de datos analógicos de televisión).
+# Fibra Óptica:
+- Delgada hebra de vidrio o silicio fundido que conduce luz.
+- Se requieren dos filamentos para una comunicación bidireccional: TX y RX
+### 3 componentes por cada filamento:
+- fuente de luz : LED o Laser
+- medio transmisor: fibra optica
+- detector de luz: fotodiodo.
+##### Convención: 
+Pulso de luz indica un bit 1, ausencia de luz indica un bit 0. Ancho de pulso de luz < ancho del pulso eléctrico.
+### Construccion de la FO
+- core = nucleo
+- cladding = manto
+estos dos componentes que van a hacer transmitir la luz dentro de la fibra y que se produzca el efecto de reflexión para que la luz no se vaya para afuera.
+- coating = recubrimiento.
+- Strengthening fibers = tensores
+- Cable jacket = cobertor
