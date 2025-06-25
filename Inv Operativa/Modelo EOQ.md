@@ -23,7 +23,8 @@ supuestos:
 - La demanda se conoce con certeza y es constante en el tiempo
 - no se permiten faltantes
 - El tiempo para recibir los pedidos es constante
-- El pedido se recibe todo al mismo timempo
+- El pedido se recibe todo al mismo tiempo
+
 Cantidad de Pedido: Q, se recibe y se consume de manera constante.
 Punto de Reorden: R; Cuando el stock de inventario decrece hasta este punto se realiza un nuevo pedido. (En este modelo R=0).
 La cantidad de pedido optima Q* es la cantidad pedida que minimiza el costo de mantenimiento y orden. 
@@ -74,8 +75,8 @@ $$Tc(Q)= Co*D/Q + ((Cc*Q)/2)*(1-d/p)$$
 #### Cantidad óptima de pedido:
 $$Q* = sqrt((2CoD)/(Cc*(1-d/p)))$$
 # Modelo EOQ con Descuento por Cantidad
-El modelo EOq basico puede ser utilizado para resolver la vantidad optima de pedido para este tipo de modelo. Sin embargo la aplicacion esta alterada, La ecuacion agrega el precio del producto en la determinada cantidad.
+El modelo EOQ basico puede ser utilizado para resolver la vantidad optima de pedido para este tipo de modelo. Sin embargo la aplicacion esta alterada, La ecuacion agrega el precio del producto en la determinada cantidad.
 $$Tc(Q) = CoD/Q + CcQ/2 + PD$$
-Cuando hay un descuento debido a la cantidad, este esta asiciado a una determinada cantidad de pedido Q, La cual puede ser diferente de la optima, y el cliente evaluara la posibilidad de sacrificar mayores costos de mantenimiento de inventario por el descuento de la cantidad. Como resultado, el precio de compra afecta la cantidad optima de pedido cuando hay escuentos disponibles.
+Cuando hay un descuento debido a la cantidad, este esta asociado a una determinada cantidad de pedido Q, La cual puede ser diferente de la optima, y el cliente evaluara la posibilidad de sacrificar mayores costos de mantenimiento de inventario por el descuento de la cantidad. Como resultado, el precio de compra afecta la cantidad optima de pedido cuando hay descuentos disponibles.
 # Stocks de Seguridad:
 Cuando la demanda es incierta, un stock de seguridad es añadido para esa cumplir con esa demanda mientras se espera por la producción.
