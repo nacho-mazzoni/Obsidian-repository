@@ -71,3 +71,103 @@ $$r = 548*sqrt(d1*d2/F*D)$$
 para todo d1, d2, D (Km), F(Mhz), r(m)
 ##### Este fenomeno no exige que exactamente nada invada esa zona crítica, sino que nos obliga a trabajar con un criterio de obstrucción.
 ##### Pero como criterio rector debería procurarse que el area obstruida no supere el 15% del area circular circular de la Z1 de Fresnel para no tener que calcular pérdidas adicionales por difracción.
+## Los componentes de una instalación 
+### Esquema de Tx/Rx por Radiofrecuencia
+
+indoor para denotar "instalaciones en el interior" y otdoor para "instalaciones en el exterior", considerando interior y exterior relativos al local donde operará la instalación, que recibe el nombre del sitio. 
+### Los radios o radiobases
+RBU (radio base unit) es un equipo que cumple con las operaciones necesarias para que el flujo binario de datos entregados por el DTE desde su interfaz pueda ser irradiado. Por lo tanto, contiene una etapa DCE, que podrá ser moduladora analógica o digital y una etapa amplificadora que convierte a señal modulada en señal RF con la potencia necesaria para entregarla a la interfaz del alimentador que la lleva a la antena. 
+Como todo DTE una radiobase es un elemento par y por lo tanto trabaja emitiendo y recibiendo señal de su análogo. Entre sus datos importantes están la potencia de transmisión Px que indica la potencia útil total de la señal emitida y la sensibilidad Sr que indica la potencia que es capaz de sensibilizar al receptor.
+En la categoría RBU entran los puntos de acceso inalambricos (popularizados como access point) que se utilizan para transmitir en 802.11 en modo infraestructura, al que apropiadamente se le puede decir que actúa como radio módem.
+### Los alimentadores
+Es el conductor de señales guiadas o semiguiadas que conecta a la RBU con el radiante en la antena, y tiene mucho interés porque introduce una perdida que no es despreciable en el transporte entre antena y RBU. 
+Generalmente es un cable coaxial. Tiene una interfaz para conectar la antena y otra para conectar la RBU, que suele recibir el nombre de "interfaz R/A".
+### Las antenas
+La transmisión por RF se apoya en antenas directivas que privilegian una dirección hacia la cual transmitir, no directivas que irradian hacia un sector y omnidireccionales que irradian en todas direcciones. 
+Enlace punto a punto: se usan antenas directivas.
+Enlace Punto a multipunto: se usan antenas no directivas o omnidireccinales.
+La antena directiva tiene reflector parabólico, y consiste en dos secciones: el radiante y el reflector que le da dirección al haz. Al radiante lo alimenta con RF el alimentador a través de  un acople. el nombre genérico de la interfaz de la terminación del alimentador con el aire es punta de antena.
+Sin el reflector, la señal tendría un gran desperdicio. Pero la existencia del reflector no asegura que la eficiencia de la transmisión sea total.
+Las antenas no directivas suelen irradiar de modo sectorizado. Las sectorizaciones típicas pueden ser de 60º, 90º y 120º.
+Estas antenas al ser no directivas carecen de reflector, entendiendo éste como el parabólico, pero siempre tienen algún tipo de cobertura de protección propia que les da similitud con una antena directiva, y que pueden contener algun pequeño reflector interno.
+Las antenas omnidireccionales no cumplen con el concepto de haz focalizado en una direccion, y tienen un patrón de radiación de 360º. Una aplicación típica; telefonía wireless para transmisión de datos en banda angosta y, mucho mas difundido, las transmisiones en 802.11 como si fueran wifi que se realizan outdoor y 802.16.
+Cuando se analiza una antena los datos mas importantes que usamos de ella son su ganancia y su relación F/B llamada también frente-a-espalda.
+### El medio 
+El medio que atraviesa la microonda para alcanzar su objetivo es el aire. suponemos que si indice de refracción es 1. sin embargo eso es cierto solo para trayectos extremadamente pequeños o en situaciones de extrema pureza. En la mayoría de las situaciones, el aire limpio tiene una tasa para la velocidad de propagación del haz respecto a la velocidad de la luz en el vació, llamada NVP, (el indice de refracción, n=1,02).
+La influencia del medio en la propagación y las características constructivas de una antena genera diversos patrones de radiación que siempre son parte de la información necesaria a la hora de seleccionarlas.
+El efecto que el clima ejerce sobre la transmisión lo veremos bajo el nombre de fading.
+## Técnicas de Transmisión
+Existen dos formas opuestas de transmitir microondas terrestres. En la primera se ocupa una porción de banda de manera exclusiva, en la segunda se puede compartir.
+### Enlace con asignación de banda:
+Es la forma mas directa de transmitir por radiofrecuencia, para las aplicaciones punto a punto se cierta distancia, o que requieran alta capacidad o para los sistemas de frecuencia alta en la banda de RF.
+La banda asignada esta identificada por una frecuencia central para la portadora y sus bandas laterales de modulación y guarda. La frecuencia y la potencia que tendrá la transmisión deben adecuarse a los valores regulados. Tampoco pueden excederse los valores de potencia.
+El espectro se divide en bandas y sub-bandas en función de las aplicaciones.
+Esta técnica de transmisión con banda regulada se utiliza cuando las transmisiones son PaP o PMP, cuando la potencia en la punta de la antena debe ser mayor que un vatio o cuando la aplicación requiere frecuencias altas.
+### Enlace con espectro ensanchado:
+Técnica conocida como "spread spectrum". 
+Los radios convencionales poseen un estrecho ancho de banda, por lo que toda la energía de la señal se concentra en ese ancho de banda. 
+Debido a la multitud de bandas vecinas en el espectro, estas transmisiones son frecuentemente interferidas por otras en bandas cercanas y cuyos transmisores inadvertidamente o no, exceden su potencia o desplazan su frecuencia central.
+La técnica de espectro ensanchado tiene una alta inmunidad al ruido.
+Las reglas para la transmisión fueron diseñadas para la implementación de comunicaciones de datos locales o de alcances limitados, del tipo urbano e interurbano corto.
+#### Definición de espectro esparcido o spread spectrum (SS)
+Técnica de transmisión en la cual un código de seudo-ruido, independiente de los datos a transmitir, es empleado como forma de onda de modulación para esparcir (spread) la energía de la señal sobre una banda del espectro (spectrum) mucho mas grande que el ancho de banda de la señal de datos.
+Al recibir la señal, un recolector llamado **ds** (de-spread) se encarga de recuperar la señal con un código de seudo-ruido similar al utilizado en la transmisión, el cual se encuentra sincronizado.
+##### Dos tipos de **spread spectrum**:
+- ###### Frecuency hop (salto en frecuencia).
+- ###### Direct secuency (secuencia directa).
+##### Método de Salto en Frecuencia:
+Método FHSS (frecuency hop spread spectrum) esparce la señal en pequeñas señales de banda estrecha sobre toda la banda, como una función del tiempo. La banda en uso se divide en canales de igual ancho que usaran de manera pseudoaleatoria el receptor y el transmisor sincronizadamente saltarán de frecuencia en frecuencia, patrón denominado **semilla** de salto.
+Con esta técnica, el canal aparece ocupado en el total del ancho de banda todo el tiempo, pero la energía de la señal esta esparcida en los sub-canales.
+##### Método de Secuencia directa: DSSS
+El modulador toma la señal a transmitirse y la esparce sobre una banda muy ancha dentro de la banda asignada, mezclando los datos con un código seudo-aleatorio de alta velocidad antes de ser modulado y enviado a la etapa de radio frecuencia. Este codigo de alta velocidad puede ser de varios órdenes mayores que la señal de datos. 
+Proceso de recuperacion de la señal; Recolectar los datos esparcidos, lo cual es realizado mezclando la señal con el mimso código que fue utilizado para armar la señal esparcida. 
+DSSS puede verse como una tecnica surgida de esparcir la señal mediante una tecnica de CDM.
+#### Ventajas del uso de SS
+Las comunicaciones con espectro esparcido tienen la propiedad de ser vistas como ruido por aquellos que no están involucrados en una transmisión. 
+La transmisión tiene la habilidad de trabajar con potencias similares a las del ruido, que se presentará como ruido blanco.
+## El Cálculo del enlace
+Consiste en considerar que desde un transmisor hasta sensibilizar al receptor la señal sufrira una perdida en todo el sistema, producto de la sumatoria de pérdidas y la ganancia que encontrará en la trayectoria. 
+Dichas pérdidas pueden verse en la alimentación y la trayectoria, ademas de prever que habrá que contabilizar un margen para el fading o desvanecimiento producto de distintos fenómenos. Los únicos componentes que introducen ganancia son las antenas.
+### Perdidas y Ganancias
+#### Perdidas de alimentacion:
+son producidas en los alimentadores y estan tabuladas.
+Las llamaremos La 
+$$La(dB) = La + Lc + Lx$$
+La: se producen en el cable alimnetador, sea de tipo coaxial o guía de onda. 
+Lc: ocurren por la existencia de conectores o acoples
+Lx: se presentan por diversidad de la señal.
+#### Perdidas en la trayectoria:
+Se presentan cuando la señal termina el tramo del alimentador, es radiada y viaja por el medio hasta la antena de destino que capta la señal. En el viaje, se produce una perdida por atenuacion en el medio que es funcion de la frecuencia F y la longitud del vano D y que recibe el nombre de Perrdida de trayectoria de espacio libre.
+Lt para F en GHz y D en Km
+$$Lt(dB) = 92,44 + 20.log F + 20.log D$$
+#### Margen de desvanecimiento:
+fading. Es dependiente de las condiciones especificas que encuentra en la propagación.
+Factores como el tipo de suelo, el tipo de clima y el entorno que rodea a la trayectoria. 
+Tambien es dependiente de cuanto error estemos dispuestos a aceptar en una transmision, nuestro objetivo de confiabilidad expresado en porcentual. Podemos expresar el margen al que llamaremos Ld
+$$Ld(dB) = 30.log(D) + 10.log(6.A.B.F) - 10.log(1-R) -70$$
+F: GHz; D: Km.
+D y F son parametros conocidos. A es una constante tabulada que dimensiona el entorno de propagación variando desde 4 (mas desfavorable, para espejos de agua) hasta 0,25 (mas favorable, terreno duro). B pondera el clima variando desde 1 (mas desfavorable, para areas marinas) hasta 0,125 (mas favorable, para clima seco mediterraneo). Finalmente, r es el objetivo de confiabilidad porcentual, que cobra significados para valores entre 99,70% y 99,90% e interviene en formato decimal (ej: 0,9990). Este parametro opera aumentando el margen, cuando mas alta sea la expectativa de cinfiabilidad. la constante 70 esta relacionada con pretender un BER no menor a 10⁻⁶.
+#### Ganancia:
+Se encuentra solo en las antenas y esta esta tabulada unitariamente según un tipo de antena y frecuencia de la transmisión. 
+Esta varia en funcion de su naturaleza (directiva u omnidireccional) su material (rejilla, solida) y su forma (parabolica, plana, yagui, logaritmica, etc.). Para el caso, llamaremos a la ganancia en la antena:
+$$Ga(dBm)$$
+#### La ecuación del enlace
+Muestra si la señal emitida por el transmisor a la interfz, luego de todas las pérdidas y sus amplificaciones, es aún capaz de sensibilizar al receptor. La perdida total deviene entonces de la suma algebraica de las pérdidas y ganancias vistas. 
+La llamaremos perdida del sistema Ls, y la calcularemos como una perdida:
+$$Ls(dB) = La + Lt + Ld - Ga$$
+Para que el receptor se excite, el valor de la potencia recibida Pr medida en la interfaz R/A del receptor debe ser igual o mayor que el umbral de sensibilización Sr del receptor, medido tambien en R/A.
+Dicho valor Pr se obtiene restándoles a la potencia Px de la transmision medida en la R/A del transmisor, la Perdida del sistema Ls calculada.
+$$Pr(dBm) = Px(dBm) - Ls(dB) >= Sr(dBm)$$
+si esta desigualdad se verifica, se asegura que el sistema sea factible.
+Existen distintas herramientas sencillas para validar el calculo del enlace, pero se debe siempre recordar que el calculo esta completo cuando se verifica que hay alcance (la potencia transmitida alcanza) y visivilidad (LOS) y no hay interferencias (Fresnel).
+## Factor y Margen de Seguridad
+### Margen de seguridad:
+Porcentahe de altura que podemos bajar una antena y está aún seguir alcanzado el objetivo aunque sea al limite de su alcance visual. Es obvio que el margen de seguridad debe ser menor que el 100% por que no se puede retirar el 100% de la antena.
+Hc = altura de la antena que se calcula para que alcance al objetivo.
+Hr es la altura real que tendrá la antena. (antes de bajarla)
+Ms el margen de seguridad, emtonces:
+$$Hr = Hc / 1-Ms ; Ms<1$$
+### Factor de Seguridad:
+factor que multiplica la altura calculada Hc para encontrar una altura real de instalacion Hr con el proposito de asegurar el objetivo. Por defincion este factor debe ser mayor que 1. 
+Fs mide la cantidad de veces en la que Hc está contenida en Hr y, obviamente, Hr sera mayor que Hc
+$$Hr = Hc . Fs; Fs>1$$

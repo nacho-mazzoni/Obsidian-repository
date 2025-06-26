@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comunicaciones/802.11 Wireless LAN- Virtual.md",
+                "file": "Comunicaciones/Transmisión por microondas terrestre.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "802.11 Wireless LAN- Virtual"
+              "title": "Transmisión por microondas terrestre"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3e261bc387be9cde",
@@ -180,12 +181,20 @@
   "active": "749a3415b7d7ce94",
   "lastOpenFiles": [
     "Comunicaciones/Medios de transmisión no guiados.md",
-    "Comunicaciones/802.11 Wireless LAN- Virtual.md",
-    "Comunicaciones/Medio de Transmisión Tangibles.md",
-    "Comunicaciones/Ethernet.md",
     "Comunicaciones/Conmutación En Capa de Enlace.md",
+    "Comunicaciones/Ethernet.md",
     "Comunicaciones/Comunicaciones con Fibra Optica.md",
     "Comunicaciones/Capa de Enlace.md",
+    "Comunicaciones/802.11 Wireless LAN- Virtual.md",
+    "Comunicaciones/2025-05-22.md",
+    "images/receptorTransmisor.MetodoAccesoalMedio.jpg",
+    "images/microondaTerrestresBanda-AnchodeBanda.jpg",
+    "images/caracteristicas de transmision de mediios.jpg",
+    "images/antenaParabolicadeReflexion.jpg",
+    "images/FormatoTrama802.11.jpg",
+    "images/Estandares WLAN.jpg",
+    "images/802.11a1.jpg",
+    "Comunicaciones/Medio de Transmisión Tangibles.md",
     "Comunicaciones/Transmisión por microondas terrestre.md",
     "Comunicaciones/Subcapa MAC.md",
     "Inv Operativa/Pronosticos.md",
@@ -204,18 +213,10 @@
     "images/PatronesArquitectonicos.jpg",
     "images/problemaDeOptimizacion3.jpg",
     "images/problemaDeOptimizacion2.jpg",
-    "images/problemaDeOptimizacion.jpg",
     "Diseño De Sistemas/Ingeniería de Software.md",
     "Diseño De Sistemas/Cualidades de Software.md",
     "Kaizen.md",
-    "images/modelodecascada.png",
-    "images/modeloincremental.png",
-    "images/modeloevolutivoenespiral.png",
-    "images/modeloevolutivo.png",
-    "images/modeloenV.png",
-    "images/flujodelproceso2.png",
     "Comunicaciones",
-    "Comunicaciones/2025-05-22.md",
     "Diseño De Sistemas",
     "images",
     "Carpeta sin título",
