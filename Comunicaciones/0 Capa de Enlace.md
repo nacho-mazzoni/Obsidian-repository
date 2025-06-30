@@ -66,9 +66,9 @@
 ![[ProtocoloVentanaDeslizante 1.jpg]]
 #### Tamaño de la ventana
 ###### La ventana mínima para 100% de ocupación es la que "llena el hilo" de datos en ambos sentidos +1 
-$W = 2t(tau)*v/t + 1$ 
+$W = 2τ*v/t + 1$ 
 - w: tamaño de la ventana
-- t(tau): tiempo de propagación 
+- τ: tiempo de propagación 
 - v: velocidad de la linea
 - t: tamaño de la trama
 ###### Cuando se envían todas las tramas por el tamaño de la ventana deslizante el emisor para porque a esta altura ya debería haber recibido el primer ack. 
@@ -118,15 +118,15 @@ $W = 2t(tau)*v/t + 1$
 #### Componentes de PPP 
 - LCP Link Control Protocol
 - NCP Network Control Protocol
-- CHAP Challenge Handshake Authentication Protocolo
+- CHAP Challenge Handshake Authentication Protocol
 
 ##### Funcionamiento de CHAP 
 
 #### Nivel de enlace en Frame Ready
-- No se realiza reenvío en caso de erro 
+- No se realiza reenvío en caso de error
 - El campo de dirección contiene la informacion del circuito virtual y los parametros propios de las funciones de Frame Relay
 ## Nivel de Enlace en ATM
-###### Corresponde a la subcapa TC (Transmission Convergence) de la capa fisica del modeloo ATM
+###### Corresponde a la subcapa TC (Transmission Convergence) de la capa fisica del modelo ATM
 ###### Estructura de una celda ATM
 
 ###### Estructura de la cabecera de celda ATM
