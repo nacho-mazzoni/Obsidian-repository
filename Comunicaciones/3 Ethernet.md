@@ -4,11 +4,11 @@
 ###### 10BASE5 y 10BASE2 son cables coaxiales que no se ven mas. En estos el router funciona como un host, una puerta de entrada y salida, puede estar en cualquier parte del tramo de cable, en un extremo, en el medio, etc. (Con 10BASE5 c/500m un repetidor)
 ###### 10BASEF: fibra óptica, máximos segmento 2000 m y cantidad de nodos/seg:1024.
 ![[TipoCableadoHUB.jpg]]
-###### Este dispositivo HUB, solo se conecta a la PC y muestra si hay o no colisión (no toma otra acción).
-![[codificacionEthernet.jpg]]
-###### No se utiliza modulación, solo codificación.
+Este dispositivo HUB, solo se conecta a la PC y muestra si hay o no colisión (no toma otra acción).
 
-###### Ethernet de 10Mbps funciona con manchester, de 100Mbps o 1Gbps no se pueden codificar con manchester, se usan tecnicas mejores con codificaciones sustitutivas. (Leer en Tannenbaum).
+![[codificacionEthernet.jpg]]
+No se utiliza modulación, solo codificación.
+Ethernet de 10Mbps funciona con manchester, de 100Mbps o 1Gbps no se pueden codificar con manchester, se usan tecnicas mejores con codificaciones sustitutivas. (Leer en Tannenbaum).
 # Protocolo de la Subcapa MAC de Ethernet
 ![[ProtocoloSubCapaMACEthernet.jpg]]
 ###### Similar a HDLC pero no tiene un limite en la cantidad de datos. Porque no tengo header ni final line. 
@@ -25,9 +25,9 @@
 ###### velocidad de la luz: c = 3x10⁸ m/s; NVP = 2x10⁸ m/s
 ###### $t_1 = 2500 m / 2x10⁸ m/s = 12,5 μs$
 ###### $t_2 = 2500 m / 2x10⁸ m/s = 12,5 μs$
-###### $t_1 + t_2 = 25 μs$ --> $T_1-2 = 2*(t_1+t_2) = 50 μs$
+###### $t_1 + t_2 = 25 μs$ --> $T_12 = 2*(t_1+t_2) = 50 μs$
 ###### Se multiplica por dos para considerar los repetidores y el retardo que tienen.
-###### Tiempo de contienda = 2τ. Con 10Mbps
+###### Tiempo de contienda = 2τ. 
 con 10 Mbps en 50μs se transmiten 500 bits, equivalente a 62,5 bytes 
 tomando como valor a 64 bytes, son 512 bits, transmitidos en 51,2 μs (Tiempo de contieda=2τ).
 ###### Si un host logra transmitir sin obstruccion por mas tiempo que el de contienda, el canal es suyo. 
